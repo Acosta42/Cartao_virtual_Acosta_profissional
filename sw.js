@@ -3,7 +3,7 @@ const BASE = '/Cartao_virtual_Acosta/';
 const FILES = [
   BASE, BASE + 'index.html', BASE + 'manifest.json',
   BASE + 'icon-192.png', BASE + 'icon-512.png',
-  BASE + 'og-image.png', BASE + 'Arturzinho.png'
+  BASE + 'og-image.png', BASE + 'Acosta.png'
 ];
 
 self.addEventListener('install', e => {
