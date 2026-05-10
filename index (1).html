@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ══ SEO BÁSICO ══ -->
+<title>Artur Costa — Cartão Virtual | Design, Web & Branding | Torres Novas</title>
+<meta name="description" content="Cartão virtual de Artur Costa — especialista em Design, Logótipos, Curriculum Vitae, Desenvolvimento Web e Cartões Virtuais. Baseado em Torres Novas, Portugal.">
+<meta name="keywords" content="Artur Costa, design Portugal, criação de logótipos, curriculum vitae, desenvolvimento web, cartão virtual, branding Torres Novas, sites Portugal, Acosta, web designer Portugal">
+<meta name="author" content="Artur Costa">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lopescosta.unaux.com/">
+
+<!-- ══ OPEN GRAPH — Facebook, WhatsApp, LinkedIn ══ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lopescosta.unaux.com/">
+<meta property="og:title" content="Artur Costa — Design, Web & Branding">
+<meta property="og:description" content="Cartão virtual de Artur Costa. Design · Logótipos · Curriculum Vitae · Desenvolvimento Web · Cartões Virtuais. Torres Novas, Portugal.">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Acosta42/Cartao_virtual_Acosta@main/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Artur Costa — Cartão Virtual">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Artur Costa — Cartão Virtual">
+
+<!-- ══ TWITTER CARD ══ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Artur Costa — Design, Web & Branding">
+<meta name="twitter:description" content="Cartão virtual de Artur Costa. Design · Logótipos · Curriculum Vitae · Desenvolvimento Web. Torres Novas, Portugal.">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Acosta42/Cartao_virtual_Acosta@main/og-image.png">
+<meta name="twitter:image:alt" content="Artur Costa — Cartão Virtual">
+
+<!-- ══ DADOS ESTRUTURADOS — Google Rich Results ══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Artur Costa",
+  "alternateName": "Acosta",
+  "jobTitle": "Designer & Desenvolvedor Web",
+  "description": "Especialista em Design, Logótipos, Curriculum Vitae, Desenvolvimento Web e Cartões Virtuais. Baseado em Torres Novas, Portugal.",
+  "url": "https://lopescosta.unaux.com/",
+  "email": "acosta.9020004@gmail.com",
+  "telephone": "+351915318537",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Torres Novas",
+    "addressCountry": "PT"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/artur-antonio-lopes-da-costa-01158561/",
+    "https://github.com/Acosta42",
+    "https://arturcosta.unaux.com/"
+  ],
+  "knowsAbout": ["Design Gráfico", "Logótipos", "Desenvolvimento Web", "Curriculum Vitae", "Branding", "Cartões Virtuais"]
+}
+</script>
+
+<!-- ══ PWA ══ -->
+<meta name="theme-color" content="#0a0a0a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Artur Costa">
+
+<!-- ══ FAVICONS — todas as plataformas ══ -->
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+
+<title>Artur Costa — Cartão Virtual | Design, Web & Branding | Torres Novas</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --gold:#c9a84c;
+  --gold-light:#e8d08a;
+  --dark:#0a0a0a;
+  --dark2:#111111;
+  --dark3:#1a1a1a;
+  --dark4:#222222;
+  --border:rgba(201,168,76,0.22);
+  --text:#f0ece4;
+  --muted:#8a8070;
+}
+
+html,body{
+  width:100%;height:100%;
+  background:radial-gradient(ellipse at 50% 60%,#1a1508 0%,#0a0a0a 70%);
+  font-family:'DM Sans',sans-serif;
+  color:var(--text);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+
+/* ── CARD ── */
+.card{
+  width:min(90vw,370px);
+  height:min(92vh,640px);
+  border-radius:24px;
+  border:1px solid var(--border);
+  background:var(--dark2);
+  position:relative;
+  overflow:hidden;
+  animation:floatIn .8s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes floatIn{from{opacity:0;transform:translateY(28px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+.card.idle-float{animation:floatIn .8s cubic-bezier(.16,1,.3,1) both,idleFloat 5s 2.5s ease-in-out infinite}
+@keyframes idleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.card::before,.card::after{content:'';position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);z-index:10;pointer-events:none}
+.card::before{top:0}.card::after{bottom:0}
+
+/* ── PANELS ── */
+.panel{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  transition:opacity .45s ease,transform .45s cubic-bezier(.4,0,.2,1);
+  will-change:opacity,transform;
+}
+
+/* nav tabs at bottom */
+.tab-bar{
+  position:absolute;top:0;left:0;right:0;
+  height:54px;
+  background:linear-gradient(135deg,#1c1400 0%,#2e2000 45%,#1c1400 100%);
+  border-bottom:2px solid rgba(201,168,76,0.55);
+  box-shadow:0 3px 24px rgba(201,168,76,0.13);
+  display:flex;align-items:center;justify-content:space-around;
+  z-index:20;
+  backdrop-filter:blur(8px);
+}
+.tab-btn{
+  flex:1;height:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  background:none;border:none;cursor:pointer;
+  color:var(--muted);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;
+  transition:color .2s;position:relative;
+}
+.tab-btn .tab-icon{font-size:17px;line-height:1;transition:transform .2s}
+.tab-btn.active{color:var(--gold)}
+.tab-btn.active .tab-icon{transform:scale(1.15)}
+.tab-btn::after{content:'';position:absolute;top:0;left:20%;right:20%;height:2px;background:var(--gold);opacity:0;border-radius:0 0 3px 3px;transition:opacity .2s}
+.tab-btn.active::after{opacity:1}
+
+/* ── PANEL STATES ── */
+/* only active panel is visible */
+.panel{opacity:0;transform:translateX(40px);pointer-events:none}
+.panel.active{opacity:1;transform:translateX(0);pointer-events:auto}
+.panel.exit-left{opacity:0;transform:translateX(-40px);pointer-events:none}
+
+/* ── CORNERS ── */
+.corner{position:absolute;width:26px;height:26px;border-color:var(--gold);border-style:solid;opacity:.4}
+.c-tl{top:14px;left:14px;border-width:2px 0 0 2px;border-radius:4px 0 0 0}
+.c-tr{top:14px;right:14px;border-width:2px 2px 0 0;border-radius:0 4px 0 0}
+.c-bl{bottom:14px;left:14px;border-width:0 0 2px 2px;border-radius:0 0 0 4px}
+.c-br{bottom:14px;right:14px;border-width:0 2px 2px 0;border-radius:0 0 4px 0}
+
+/* ── FRONT ── */
+#panelFront{align-items:center;justify-content:center;padding-top:54px}
+
+.avatar-ring{width:140px;height:140px;border-radius:50%;position:relative;margin-bottom:22px;flex-shrink:0}
+.avatar-ring::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(var(--gold) 0%,var(--gold-light) 40%,transparent 60%,var(--gold) 100%);animation:spinRing 6s linear infinite}
+.avatar-ring::after{content:'';position:absolute;inset:-1px;border-radius:50%;background:var(--dark2)}
+@keyframes spinRing{to{transform:rotate(360deg)}}
+.avatar-inner{position:absolute;inset:0;z-index:1;border-radius:50%;overflow:hidden;background:var(--dark3);display:flex;align-items:center;justify-content:center}
+.avatar-inner img{width:100%;height:100%;object-fit:cover}
+.avatar-initials{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:var(--gold);animation:pulseGlow 3s ease-in-out infinite}
+@keyframes pulseGlow{0%,100%{opacity:1}50%{opacity:.55}}
+
+.front-name{font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,26px);font-weight:700;letter-spacing:.5px;text-align:center;margin-bottom:7px}
+.front-title{font-size:11px;font-weight:300;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:20px}
+.front-location{font-size:12px;color:var(--muted);text-align:center;margin-bottom:30px}
+.divider{width:36px;height:1px;background:var(--gold);opacity:.35;margin:0 auto 30px}
+
+.hint-text{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:16px}
+
+/* ── CONTACTOS ── */
+#panelContactos{padding-top:54px;overflow-y:auto;scrollbar-width:none}
+#panelContactos::-webkit-scrollbar{display:none}
+
+.panel-header{padding:22px 24px 16px;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:14px;flex-shrink:0}
+.mini-avatar{width:44px;height:44px;border-radius:50%;background:var(--dark3);border:1px solid var(--border);overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.mini-avatar img{width:100%;height:100%;object-fit:cover}
+.mini-initials{font-family:'Playfair Display',serif;font-size:16px;color:var(--gold);font-weight:700}
+.panel-header-info h2{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;margin-bottom:1px}
+.panel-header-info p{font-size:10px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-weight:300}
+
+.panel-body{padding:16px 24px 20px;display:flex;flex-direction:column;gap:16px}
+
+.sec-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+
+.info-row{display:flex;align-items:center;gap:11px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.info-row:last-child{border-bottom:none}
+.info-icon{width:30px;height:30px;border-radius:7px;background:rgba(201,168,76,.08);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.info-label{font-size:10px;color:var(--muted);margin-bottom:1px}
+.info-value{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+a.info-value{color:var(--gold-light);text-decoration:none}
+a.info-value:hover{text-decoration:underline}
+
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{padding:4px 11px;border-radius:20px;border:1px solid var(--border);font-size:11px;color:var(--muted)}
+
+.social-row{display:flex;gap:8px;flex-wrap:wrap}
+.social-btn{display:flex;align-items:center;gap:5px;padding:7px 13px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:11px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s,background .2s}
+.social-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(201,168,76,.05)}
+
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.btn-outline{padding:10px 22px;border:1px solid var(--gold);background:transparent;color:var(--gold);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;border-radius:40px;cursor:pointer;transition:background .2s,color .2s;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn-outline:hover{background:var(--gold);color:var(--dark)}
+
+/* ── PORTFÓLIO ── */
+#panelPortfolio{padding-top:54px;overflow-y:auto;scrollbar-width:none;background:var(--dark2)}
+#panelPortfolio::-webkit-scrollbar{display:none}
+
+.portfolio-header{padding:22px 24px 16px;border-bottom:1px solid rgba(255,255,255,.06);flex-shrink:0}
+.portfolio-header h2{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:4px}
+.portfolio-header p{font-size:11px;color:var(--muted);letter-spacing:1px}
+
+.portfolio-grid{
+  padding:18px 16px 20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.portfolio-card{
+  position:relative;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:var(--dark3);
+  overflow:hidden;
+  cursor:pointer;
+  text-decoration:none;
+  display:flex;flex-direction:column;
+  transition:transform .25s ease,border-color .25s,box-shadow .25s;
+  min-height:110px;
+}
+.portfolio-card:hover{
+  transform:translateY(-3px) scale(1.02);
+  border-color:var(--gold);
+  box-shadow:0 8px 28px rgba(201,168,76,.15);
+}
+/* card que ocupa largura total */
+.portfolio-card.wide{grid-column:1/-1;min-height:90px;flex-direction:row;align-items:center}
+
+.portfolio-card-bg{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--c1,#1a1a2e),var(--c2,#16213e));
+  opacity:.9;
+}
+.portfolio-card-pattern{
+  position:absolute;inset:0;
+  opacity:.06;
+  background-image:repeating-linear-gradient(45deg,var(--gold) 0,var(--gold) 1px,transparent 0,transparent 50%);
+  background-size:14px 14px;
+}
+
+.portfolio-card-body{
+  position:relative;z-index:1;
+  padding:14px 14px 12px;
+  display:flex;flex-direction:column;gap:6px;
+  flex:1;
+}
+.portfolio-card.wide .portfolio-card-body{flex-direction:row;align-items:center;gap:14px}
+
+.portfolio-icon{
+  font-size:24px;line-height:1;
+  filter:drop-shadow(0 0 8px rgba(201,168,76,.3));
+}
+.portfolio-card.wide .portfolio-icon{font-size:28px;flex-shrink:0}
+
+.portfolio-info{display:flex;flex-direction:column;gap:2px}
+.portfolio-name{font-size:13px;font-weight:500;color:var(--text);letter-spacing:.3px;line-height:1.3}
+.portfolio-desc{font-size:10px;color:var(--muted);line-height:1.4}
+
+.portfolio-arrow{
+  position:absolute;bottom:10px;right:12px;
+  font-size:14px;color:var(--gold);opacity:.5;
+  transition:opacity .2s,transform .2s;
+}
+.portfolio-card:hover .portfolio-arrow{opacity:1;transform:translateX(3px)}
+.portfolio-card.wide .portfolio-arrow{position:relative;bottom:auto;right:auto;margin-left:auto;flex-shrink:0}
+
+/* ── PARTILHA ── */
+#panelPartilha{padding-top:54px;overflow-y:auto;scrollbar-width:none}
+#panelPartilha::-webkit-scrollbar{display:none}
+
+.share-body{padding:20px 24px;display:flex;flex-direction:column;gap:14px}
+
+.share-preview{
+  border-radius:16px;border:1px solid var(--border);
+  background:var(--dark3);overflow:hidden;margin-bottom:4px;
+}
+.share-preview-img{
+  width:100%;aspect-ratio:1200/630;
+  background:linear-gradient(135deg,#0a0a0a 0%,#1a1508 50%,#0a0a0a 100%);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.share-preview-img::before{
+  content:'';position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,transparent,rgba(201,168,76,.08),transparent) 50% 40% / 100% 1px no-repeat,
+    linear-gradient(90deg,transparent,rgba(201,168,76,.08),transparent) 50% 60% / 100% 1px no-repeat;
+}
+.share-preview-text{
+  text-align:center;z-index:1;padding:16px;
+}
+.share-preview-text .sp-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px}
+.share-preview-text .sp-sub{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+
+.share-preview-meta{padding:12px 14px;border-top:1px solid var(--border)}
+.share-preview-meta p:first-child{font-size:12px;font-weight:500;margin-bottom:2px}
+.share-preview-meta p:last-child{font-size:11px;color:var(--muted)}
+
+.share-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+.share-btn{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  padding:16px 12px;border-radius:14px;
+  border:1px solid var(--border);background:var(--dark3);
+  cursor:pointer;transition:border-color .2s,background .2s,transform .15s;
+  text-decoration:none;
+}
+.share-btn:hover{border-color:var(--gold);background:rgba(201,168,76,.06);transform:translateY(-2px)}
+.share-btn .sb-icon{font-size:26px;line-height:1}
+.share-btn .sb-label{font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.share-btn:hover .sb-label{color:var(--gold)}
+
+.copy-link-row{display:flex;gap:8px}
+.copy-input{
+  flex:1;padding:10px 14px;border-radius:10px;
+  background:var(--dark3);border:1px solid var(--border);
+  color:var(--muted);font-size:11px;outline:none;
+  font-family:'DM Sans',sans-serif;
+}
+.copy-btn{
+  padding:10px 16px;border-radius:10px;
+  background:var(--gold);border:none;
+  color:var(--dark);font-size:11px;font-weight:500;cursor:pointer;
+  white-space:nowrap;transition:opacity .2s;
+}
+.copy-btn:hover{opacity:.85}
+.copy-btn.copied{background:#4caf7d}
+
+/* ── INSTALL BANNER ── */
+.install-banner{
+  position:fixed;top:68px;left:50%;transform:translateX(-50%);
+  background:var(--dark3);border:1px solid var(--border);
+  border-radius:16px;padding:12px 16px;
+  display:flex;align-items:center;gap:12px;
+  max-width:min(92vw,350px);width:100%;
+  transition:opacity .4s,transform .4s;z-index:200;
+}
+.install-banner.hide{opacity:0;transform:translateX(-50%) translateY(-16px);pointer-events:none}
+.install-banner p:first-child{font-size:13px;font-weight:500}
+.install-banner p:last-child{font-size:11px;color:var(--muted)}
+.btn-install{margin-left:auto;padding:7px 16px;border-radius:8px;background:var(--gold);border:none;color:var(--dark);font-size:12px;font-weight:500;cursor:pointer;flex-shrink:0}
+.btn-dismiss{background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer;padding:0 2px;flex-shrink:0}
+</style>
+</head>
+<body>
+
+<div class="card" id="card">
+
+  <!-- ══ PAINEL 1: FRENTE ══ -->
+  <div class="panel active" id="panelFront">
+    <div class="corner c-tl"></div><div class="corner c-tr"></div>
+    <div class="corner c-bl"></div><div class="corner c-br"></div>
+
+    <div class="avatar-ring">
+      <div class="avatar-inner" id="avatarFront">
+        <span class="avatar-initials">AC</span>
+      </div>
+    </div>
+    <div class="front-name">Artur Costa</div>
+    <div class="front-title">Design · Web · Branding</div>
+    <div class="front-location">📍 Torres Novas, Portugal</div>
+    <div class="divider"></div>
+    <span class="hint-text">↓ navegue pelos separadores</span>
+  </div>
+
+  <!-- ══ PAINEL 2: CONTACTOS ══ -->
+  <div class="panel" id="panelContactos">
+    <div class="panel-header">
+      <div class="mini-avatar" id="avatarContact">
+        <span class="mini-initials">AC</span>
+      </div>
+      <div class="panel-header-info">
+        <h2>Artur Costa</h2>
+        <p>Contactos & Info</p>
+      </div>
+    </div>
+    <div class="panel-body">
+
+      <div>
+        <div class="sec-label">Contacto</div>
+        <div class="info-row">
+          <div class="info-icon">✉</div>
+          <div style="flex:1;min-width:0">
+            <div class="info-label">Email</div>
+            <a class="info-value" href="mailto:acosta.9020004@gmail.com">acosta.9020004@gmail.com</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">☎</div>
+          <div style="flex:1;min-width:0">
+            <div class="info-label">Telefone</div>
+            <a class="info-value" href="tel:+351915318537">+351 915 318 537</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">📍</div>
+          <div style="flex:1;min-width:0">
+            <div class="info-label">Localização</div>
+            <div class="info-value">Torres Novas, Portugal</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">📄</div>
+          <div style="flex:1;min-width:0">
+            <div class="info-label">Curriculum Vitae</div>
+            <a class="info-value" href="#" id="cvLink" target="_blank">Em breve…</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="sec-label">Especialidades</div>
+        <div class="tags">
+          <span class="tag">Design</span>
+          <span class="tag">Logótipos</span>
+          <span class="tag">Curriculum Vitae</span>
+          <span class="tag">Desenvolvimento Web</span>
+          <span class="tag">Cartões Virtuais</span>
+          <span class="tag">Sites</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="sec-label">Redes Sociais</div>
+        <div class="social-row">
+          <a class="social-btn" href="https://www.linkedin.com/in/artur-antonio-lopes-da-costa-01158561/" target="_blank">in LinkedIn</a>
+          <a class="social-btn" href="https://github.com/Acosta42" target="_blank">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-outline" id="btnSave">↓ Guardar Contacto</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ PAINEL 3: PORTFÓLIO ══ -->
+  <div class="panel" id="panelPortfolio">
+    <div class="portfolio-header">
+      <h2>Portfólio</h2>
+      <p>Projetos & Sites criados</p>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <!-- gerado por JS -->
+    </div>
+  </div>
+
+  <!-- ══ PAINEL 4: PARTILHAR ══ -->
+  <div class="panel" id="panelPartilha">
+    <div class="panel-header">
+      <div class="panel-header-info">
+        <h2 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Partilhar</h2>
+        <p style="font-size:10px;color:var(--muted);letter-spacing:1px">Envie o seu cartão virtual</p>
+      </div>
+    </div>
+    <div class="share-body">
+
+      <!-- preview -->
+      <div class="share-preview">
+        <div class="share-preview-img">
+          <div class="share-preview-text">
+            <div class="sp-name">Artur Costa</div>
+            <div class="sp-sub">Design · Web · Branding</div>
+          </div>
+        </div>
+        <div class="share-preview-meta">
+          <p>Artur Costa — Cartão Virtual</p>
+          <p>lopescosta.unaux.com</p>
+        </div>
+      </div>
+
+      <!-- botões de partilha -->
+      <div class="share-grid">
+        <a class="share-btn" id="shareWhatsApp" href="#">
+          <span class="sb-icon">💬</span>
+          <span class="sb-label">WhatsApp</span>
+        </a>
+        <a class="share-btn" id="shareEmail" href="#">
+          <span class="sb-icon">✉️</span>
+          <span class="sb-label">Email</span>
+        </a>
+        <a class="share-btn" id="shareSMS" href="#">
+          <span class="sb-icon">📱</span>
+          <span class="sb-label">SMS</span>
+        </a>
+        <button class="share-btn" id="shareNative">
+          <span class="sb-icon">↗️</span>
+          <span class="sb-label">Mais</span>
+        </button>
+      </div>
+
+      <!-- copiar link -->
+      <div class="copy-link-row">
+        <input class="copy-input" id="copyInput" value="https://lopescosta.unaux.com/" readonly>
+        <button class="copy-btn" id="copyBtn">Copiar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── TAB BAR ── -->
+  <div class="tab-bar">
+    <button class="tab-btn active" data-panel="panelFront">
+      <span class="tab-icon">🪪</span>
+      <span>Cartão</span>
+    </button>
+    <button class="tab-btn" data-panel="panelContactos">
+      <span class="tab-icon">👤</span>
+      <span>Info</span>
+    </button>
+    <button class="tab-btn" data-panel="panelPortfolio">
+      <span class="tab-icon">🗂</span>
+      <span>Portfólio</span>
+    </button>
+    <button class="tab-btn" data-panel="panelPartilha">
+      <span class="tab-icon">↗</span>
+      <span>Partilhar</span>
+    </button>
+  </div>
+
+</div>
+
+<!-- Install banner -->
+<div class="install-banner hide" id="installBanner">
+  <div style="font-size:26px;flex-shrink:0">📲</div>
+  <div>
+    <p>Instalar Cartão</p>
+    <p>Adicionar ao ecrã principal</p>
+  </div>
+  <button class="btn-install" id="btnInstall">Instalar</button>
+  <button class="btn-dismiss" id="btnDismiss">×</button>
+</div>
+
+<script>
+// ── PORTFÓLIO DATA ──
+// Substitua pelos seus projetos reais: { name, desc, url, icon, color1, color2 }
+const PORTFOLIO = [
+  {
+    name: 'Synopsys Portugal',
+    desc: 'Site institucional empresarial',
+    url:  'https://synopsysportugal.infinityfreeapp.com/?i=1',
+    icon: '🏢', c1: '#0d1b2a', c2: '#1a3050', wide: false
+  },
+  {
+    name: 'Vendedor de Sonhos',
+    desc: 'Inspiração & criatividade',
+    url:  'https://vendedordesonhos.infinityfreeapp.com/?i=1',
+    icon: '✨', c1: '#1a0a2e', c2: '#2d1050', wide: false
+  },
+  {
+    name: 'Partido',
+    desc: 'Site político / associativo',
+    url:  'https://partido-site.unaux.com/?i=1',
+    icon: '🏛', c1: '#0a1a00', c2: '#1a3300', wide: false
+  },
+  {
+    name: 'Nexus Digital',
+    desc: 'Agência digital & tecnologia',
+    url:  'https://nexusdigital.unaux.com/?i=1',
+    icon: '⚡', c1: '#001a2e', c2: '#002d4a', wide: false
+  },
+  {
+    name: 'Risadaria Stream',
+    desc: 'Entretenimento & comédia',
+    url:  'https://risadariastream.unaux.com/?i=1',
+    icon: '🎭', c1: '#1a0000', c2: '#330a00', wide: false
+  },
+  {
+    name: 'Sabores da Aldeia',
+    desc: 'Gastronomia portuguesa',
+    url:  'https://saboresdaaldeia.unaux.com/?i=1',
+    icon: '🍲', c1: '#1a0e00', c2: '#2d1a00', wide: false
+  },
+  {
+    name: 'Ver todos os projetos',
+    desc: 'GitHub · Acosta42',
+    url:  'https://github.com/Acosta42',
+    icon: '⌥', c1: '#0d0d0d', c2: '#1a1a1a', wide: true
+  },
+];
+
+// ── CV LINK ──
+const CV_URL = 'https://arturcosta.unaux.com/?i=1';
+if (CV_URL) {
+  const el = document.getElementById('cvLink');
+  el.href = CV_URL; el.textContent = 'Ver CV Online';
+}
+
+// ── PARTILHA ──
+const CARD_URL = 'https://lopescosta.unaux.com/';
+const MSG = 'Olá! Aqui está o meu cartão virtual 👇\n' + CARD_URL;
+
+document.getElementById('shareWhatsApp').href = 'https://wa.me/?text=' + encodeURIComponent(MSG);
+document.getElementById('shareEmail').href = 'mailto:?subject=' + encodeURIComponent('Cartão Virtual — Artur Costa') + '&body=' + encodeURIComponent(MSG);
+document.getElementById('shareSMS').href = 'sms:?body=' + encodeURIComponent(MSG);
+
+document.getElementById('shareNative').addEventListener('click', async () => {
+  if (navigator.share) {
+    try { await navigator.share({ title:'Cartão Virtual — Artur Costa', text:'O meu cartão virtual', url: CARD_URL }); }
+    catch(e){}
+  } else {
+    document.getElementById('copyBtn').click();
+  }
+});
+
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(CARD_URL).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copiado'; btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copiar'; btn.classList.remove('copied'); }, 2000);
+  }).catch(() => {
+    document.getElementById('copyInput').select();
+    document.execCommand('copy');
+  });
+});
+
+// ── PORTFÓLIO GRID ──
+const grid = document.getElementById('portfolioGrid');
+PORTFOLIO.forEach(p => {
+  const a = document.createElement('a');
+  a.className = 'portfolio-card' + (p.wide ? ' wide' : '');
+  a.href = p.url; a.target = '_blank'; a.rel = 'noopener';
+  a.innerHTML = `
+    <div class="portfolio-card-bg" style="--c1:${p.c1};--c2:${p.c2}"></div>
+    <div class="portfolio-card-pattern"></div>
+    <div class="portfolio-card-body">
+      <div class="portfolio-icon">${p.icon}</div>
+      <div class="portfolio-info">
+        <div class="portfolio-name">${p.name}</div>
+        <div class="portfolio-desc">${p.desc}</div>
+      </div>
+    </div>
+    <div class="portfolio-arrow">→</div>`;
+  grid.appendChild(a);
+});
+
+// ── AVATAR ──
+(function() {
+  const AVATAR = 'Arturzinho.png';
+  ['avatarFront','avatarContact'].forEach(id => {
+    const img = new Image();
+    img.onload = () => {
+      const el = document.getElementById(id);
+      el.innerHTML = ''; el.appendChild(img);
+    };
+    img.src = AVATAR;
+  });
+})();
+
+// ── TAB NAVIGATION ──
+const panels = {};
+document.querySelectorAll('.panel').forEach(p => panels[p.id] = p);
+let currentPanel = 'panelFront';
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.panel;
+    if (target === currentPanel) return;
+
+    // exit current
+    panels[currentPanel].classList.remove('active');
+    panels[currentPanel].classList.add('exit-left');
+    setTimeout(() => panels[currentPanel].classList.remove('exit-left'), 450);
+
+    // enter new
+    panels[target].classList.add('active');
+    currentPanel = target;
+
+    // update tabs
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // stop idle float if leaving front
+    if (target !== 'panelFront') card.classList.remove('idle-float');
+    else setTimeout(() => card.classList.add('idle-float'), 500);
+  });
+});
+
+// idle float
+const card = document.getElementById('card');
+setTimeout(() => card.classList.add('idle-float'), 2500);
+
+// ── GUARDAR CONTACTO ──
+document.getElementById('btnSave').addEventListener('click', () => {
+  const vcf = ['BEGIN:VCARD','VERSION:3.0',
+    'FN:Artur Costa','N:Costa;Artur;;;',
+    'TEL;TYPE=CELL:+351915318537',
+    'EMAIL:acosta.9020004@gmail.com',
+    'ADR;TYPE=HOME:;;Torres Novas;Portugal',
+    'URL:' + CARD_URL,
+    'END:VCARD'].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([vcf],{type:'text/vcard'}));
+  a.download = 'Artur_Costa.vcf'; a.click();
+});
+
+// ── PWA INSTALL ──
+let deferredPrompt;
+const banner = document.getElementById('installBanner');
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault(); deferredPrompt = e;
+  setTimeout(() => banner.classList.remove('hide'), 3000);
+});
+document.getElementById('btnInstall').addEventListener('click', () => {
+  banner.classList.add('hide');
+  if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; }
+});
+document.getElementById('btnDismiss').addEventListener('click', () => banner.classList.add('hide'));
+window.addEventListener('appinstalled', () => banner.classList.add('hide'));
+
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body>
+</html>
