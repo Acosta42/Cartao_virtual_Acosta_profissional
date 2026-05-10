@@ -1,5 +1,5 @@
-const CACHE = 'cartao-artur-v3';
-const BASE = '/Cartao_virtual_Acosta/';
+const CACHE = 'cartao-artur-v5';
+const BASE = '/Cartao_virtual_Acosta_profissional/';
 const FILES = [
   BASE, BASE + 'index.html', BASE + 'manifest.json',
   BASE + 'icon-192.png', BASE + 'icon-512.png',
